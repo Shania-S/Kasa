@@ -1,0 +1,123 @@
+$main-color: #ff6060;
+.general-info {
+  display: flex;
+  justify-content: space-between;
+  margin: 25px 0;
+
+  .upper {
+    margin-bottom: 20px;
+  }
+
+  .left-side h2 {
+    color: $main-color;
+    font-size: 1.7rem;
+    font-weight: 500;
+    margin: 0;
+  }
+  .left-side h3 {
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin: 0;
+  }
+
+  .left-side .item-tags {
+    display: flex;
+
+    span {
+      background-color: $main-color;
+      padding: 3px 45px;
+      color: white;
+      margin-right: 10px;
+      border-radius: 10px;
+      font-size: 0.7em;
+      font-weight: 600;
+    }
+  }
+
+  .right-side .host-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    span {
+      color: $main-color;
+      margin-right: 10px;
+    }
+    img {
+      height: 50px;
+      width: 50px;
+      border-radius: 30px;
+    }
+  }
+
+  .right-side .item-rating {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.collapsed-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 767px) {
+  .general-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+
+    .upper {
+      margin-bottom: 20px;
+    }
+
+    .left-side h2 {
+      font-size: 1.5rem;
+      margin: 10px 0;
+    }
+    .left-side h3 {
+      font-weight: 600;
+      font-size: 0.9rem;
+      margin: 0;
+    }
+
+    .left-side .item-tags {
+      span {
+        padding: 3px 30px;
+        border-radius: 5px;
+      }
+    }
+    .right-side {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      align-items: center;
+      margin: 8px 0;
+    }
+    .right-side .host-info {
+      margin: 0;
+      span {
+        color: $main-color;
+        margin-right: 10px;
+      }
+      img {
+        height: 50px;
+        width: 50px;
+        border-radius: 30px;
+      }
+    }
+
+    .right-side .item-rating {
+      justify-content: space-around;
+      gap: 5px;
+      width: 25%;
+    }
+  }
+
+  .collapsed-info {
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+}

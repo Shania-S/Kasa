@@ -1,0 +1,45 @@
+$error-color: #ff6060;
+
+.error-msg {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.four-error {
+  color: $error-color;
+  font-size: 208px;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.txt-error {
+  font-size: 30px;
+  font-weight: 500;
+
+  color: $error-color;
+  margin-bottom: 70px;
+}
+
+br.responsive {
+  display: none; // Hide BR tag for wider screens
+}
+
+@media (max-width: 767px) {
+  br.responsive {
+    display: inline; // Show BR tag for narrow screens
+  }
+
+  .four-error {
+    font-size: 6rem;
+  }
+  .txt-error {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  .error-msg {
+    margin-top: 5rem;
+    gap: 5rem;
+  }
+}

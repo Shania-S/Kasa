@@ -1,0 +1,15 @@
+.about-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 50px 95px;
+  gap: 25px;
+  padding: 0;
+}
+@media (max-width: 767px) {
+  .about-content {
+    margin: 25px 0px 25px 0px;
+    gap: 25px;
+    padding: 0;
+  }
+}

@@ -1,0 +1,11 @@
+.kasa-layout {
+  padding: 0px 60px 0px 60px;
+  min-height: calc(100vh - 277px);
+}
+
+@media (max-width: 767px) {
+  .kasa-layout {
+    padding: 0px 15px 0px 15px;
+    min-height: calc(100vh - 20.6rem);
+  }
+}

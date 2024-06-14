@@ -1,0 +1,37 @@
+.kasa-footer {
+  background: #000000;
+  width: 100%;
+  padding: 0;
+  height: 160px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.logo-kasa-footer {
+  height: 40px;
+}
+
+br.responsive {
+  display: none; // Show BR tag for narrow screens
+}
+
+@media (max-width: 767px) {
+  .kasa-footer {
+    justify-content: center;
+    height: 232px;
+  }
+  .logo-kasa-footer {
+    width: 30%;
+  }
+  .text-footer {
+    width: 44%;
+    font-size: 0.8rem;
+    text-align: center;
+    margin-top: 10px;
+  }
+  br.responsive {
+    display: inline; // Show BR tag for narrow screens
+  }
+}

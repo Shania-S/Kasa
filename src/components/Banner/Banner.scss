@@ -1,0 +1,52 @@
+.kasa-banner {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 60px 25px 60px;
+  align-items: center;
+}
+.kasa-logo-banner {
+  width: 150px;
+  height: 50px;
+}
+.kasa-nav__list {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.kasa-nav__list li {
+  padding-left: 45px;
+  line-height: 34.22px;
+  text-align: right;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: black;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+@media (max-width: 767px) {
+  .kasa-banner {
+    padding: 15px 15px;
+  }
+
+  .kasa-logo-banner {
+    width: 130px;
+    height: 40px;
+  }
+
+  .kasa-nav__list {
+    padding: 0;
+  }
+
+  .kasa-nav__list li {
+    text-transform: uppercase;
+    padding-left: 25px;
+  }
+
+  .nav__link {
+    font-size: 0.8rem;
+  }
+}

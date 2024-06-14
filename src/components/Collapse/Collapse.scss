@@ -1,0 +1,62 @@
+// .collapsible .content {
+//   padding: 10px;
+//   background-color: #eeeeee;
+
+//   ul {
+//     list-style-type: none;
+//     padding: 0;
+//   }
+// }
+
+.collapsible .header {
+  color: white;
+  padding: 5px 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  background-color: #ff6060;
+  border-radius: 8px;
+  font-weight: 700;
+  align-items: center;
+}
+
+.apartmentContent {
+  height: 180px;
+  list-style-type: none;
+  padding: 10px;
+  background-color: #eeeeee;
+  margin: 0;
+}
+
+.descriptionCollapsed,
+.equipmentsCollapsed {
+  width: 48%;
+}
+
+.about-content-list {
+  padding: 10px;
+  background-color: #eeeeee;
+  list-style-type: none;
+}
+@media (max-width: 767px) {
+  .collapsible .header {
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    background-color: #ff6060;
+    border-radius: 8px;
+    font-weight: 700;
+    align-items: center;
+  }
+
+  .arrowBack {
+    height: 25px;
+  }
+  .descriptionCollapsed,
+  .equipmentsCollapsed {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+}

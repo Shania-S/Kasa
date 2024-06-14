@@ -1,0 +1,35 @@
+.kasa-apartment-item {
+  height: 340px;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.kasa-apartment-item-cover {
+  object-fit: cover;
+  width: 100%;
+  height: 340px;
+  filter: brightness(80%);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.kasa-apartment-item-title {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 25.67px;
+  text-align: left;
+  text-shadow: black 0px 0px 10px;
+}
+@media (max-width: 767px) {
+  .kasa-apartment-item {
+    height: 300px;
+  }
+  .kasa-apartment-item-cover {
+    height: 300px;
+  }
+}

@@ -1,0 +1,18 @@
+:root {
+  font-family: Montserrat;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100%;
+  position: relative;
+  box-sizing: inherit;
+}

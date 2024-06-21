@@ -10,7 +10,7 @@ export function ErrorPage() {
         pas.
       </span>
       <p>
-        <NavLink className="returnHome-link">
+        <NavLink className="returnHome-link" to="/">
           Retourner sur la page d’accueil
         </NavLink>
       </p>

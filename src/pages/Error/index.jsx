@@ -6,7 +6,7 @@ export function ErrorPage() {
     <div className="error-msg">
       <span className="four-error">404</span>
       <span className="txt-error">
-        Oups! La page que<br className="responsive"></br>vous demandez n'existe
+        Oups! La page que<br className="responsive"></br> vous demandez n'existe
         pas.
       </span>
       <p>

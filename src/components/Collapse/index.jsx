@@ -4,7 +4,7 @@ import { useState } from "react";
 import "./Collapse.scss";
 
 export function Collapse({ header, content, classCollapse, classContent }) {
-  const [display, setDisplay, isDisplayed] = useState(false);
+  const [display, setDisplay] = useState(false);
   const contentList = typeof content === "string" ? [content] : content;
 
   const toggleElement = () => {

@@ -5,6 +5,17 @@ import { Apropos } from "../pages/Apropos";
 import { Banner } from "../components/Banner";
 import { ViewApartment } from "../pages/Apartment";
 import { Footer } from "../components/Footer";
+import { apartmentsList } from "../data/apartmentsList";
+
+const validateApartmentId = async ({ params }) => {
+  const validApartmentIds = apartmentsList.map((apartment) => apartment.id);
+  console.log(validApartmentIds);
+  console.log(params.apartmentId);
+  if (!params.apartmentId || !validApartmentIds.includes(params.apartmentId)) {
+    throw new Error("Not Found");
+  }
+  return true;
+};
 
 function Root() {
   return (
@@ -25,22 +36,32 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       {
+        index: true,
+        element: <Accueil />,
+      },
+      {
+        path: "apropos",
+        element: <Apropos />,
+      },
+      {
+        path: "apartment",
         errorElement: <ErrorPage />,
         children: [
-          { index: true, element: <Accueil /> },
           {
-            path: "/apropos",
-            element: <Apropos />,
+            path: ":apartmentId",
+            loader: validateApartmentId,
+            errorElement: <ErrorPage />,
+            element: <ViewApartment />,
           },
           {
             path: "*",
             element: <ErrorPage />,
           },
-          {
-            path: "apartment/:apartmentId",
-            element: <ViewApartment />,
-          },
         ],
+      },
+      {
+        path: "*",
+        element: <ErrorPage />,
       },
     ],
   },
